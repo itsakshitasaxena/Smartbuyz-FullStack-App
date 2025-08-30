@@ -17,8 +17,8 @@ const User=require('./models/User');
 const MongoStore = require('connect-mongo');
 
 mongoose.set('strictQuery',true);
-const dbURL = process.env.dbURL || 'mongodb://localhost:27017/Smartbuyz';
-// const dbURL = process.env.dbURL || 'mongodb://127.0.0.1:27017/shopping-hub';
+// const dbURL = process.env.dbURL || 'mongodb://localhost:27017/Smartbuyz';
+const dbURL = process.env.dbURL || 'mongodb://127.0.0.1:27017/Smartbuyz';
 mongoose.connect(dbURL )
 .then(()=>{
     console.log("DB connected successfully")

@@ -17,14 +17,17 @@ const User=require('./models/User');
 const MongoStore = require('connect-mongo');
 
 mongoose.set('strictQuery',true);
+
+const dbURL = process.env.dburl || 'mongodb://127.0.1:27017/smartbuyz';
 mongoose.connect(process.env.dbURL )
 .then(()=>{
     console.log("DB connected successfully")
 })
 .catch((err)=>{
     // console.log("DB error"); 
-    console.log(err)
+    console.log("MongoDB connection error:", err)
 })
+
 
 app.engine('ejs', ejsmate); //to use ejsmate as our engine
 app.set('view engine', 'ejs');

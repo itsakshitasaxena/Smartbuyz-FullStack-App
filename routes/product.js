@@ -5,6 +5,11 @@ const Review = require('../models/Review');
 const router=express.Router(); //mini instance of app 
 const {validateProduct, isLoggedIn, isSeller, isProductAuthor }=require('../middleware');
 
+
+router.get('/', (req, res) => {
+    res.render('home');  // views/home.ejs
+});
+
 //to show all products
 router.get('/products',isLoggedIn,async(req,res)=>{
     try{

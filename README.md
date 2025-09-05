@@ -2,8 +2,6 @@
 
 **SmartBuyZ** is a full-stack e-commerce web application where users can **browse products**, **register/login**, **add new products**, **manage a shopping cart**, and even go through a **dummy payment** experience. It is designed for an intuitive user experience with a mobile-responsive interface, secure authentication, and a modular code structure.
 
-🔗 **Live Demo (Local)**: [http://localhost:8080/products](http://localhost:8080/products)
-
 ---
 
 ## ✨ Features
